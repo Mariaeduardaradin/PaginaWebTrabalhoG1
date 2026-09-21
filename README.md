@@ -57,4 +57,38 @@ Algumas cores seriam usadas em mais de um lugar, então se for preciso mudar alg
 
 Também fiz uma configuração inicial para retirar as margens e os espaçamentos padrão dos elementos.
 
-Depois organizei as diferentes partes da página com CSS.
+## Ajustando a aparência inicial
+
+Depois de organizar o CSS, comparei o resultado que aparecia no navegador com a página do Duolingo que estou usando de referência.
+
+Tinham algumas partes bem diferentes, principalmente o tamanho da imagem principal, do título e o espaço entre os elementos. Fui fazendo alterações para tentar aproximar o resultado da página original.
+
+Tive alguns problemas durante essa parte por causa de uns erros na escrita do CSS. Então a mudança que eu esperava acontecer depois da alteração no código não funcionava. Depois conferi o código e consegui encontrar o erro e corrigir.
+
+## Trabalhando com a versão para celular
+
+Na página original, não são só os elementos que ficam menores quando a tela diminui, a organização muda também. No celular, por exemplo, a imagem fica em cima do conteúdo e os botões um abaixo do outro.
+
+Por isso, fiz pensando primeiro na tela menor e depois fazendo alterações para telas maiores usando uma media query.
+
+Também tive dificuldades em acertar o tamanho dos elementos. A imagem estava ocupando muito espaço e os botões juntamente com o titulo precisaram de alterações pra que ocupassem melhor o espaço.
+
+## Trabalhando com a versão para telas maiores
+
+Depois de deixar a tela menor com um visual aceitável, passei a trabalhar na versão para computador.
+
+Usei o media query para mudar a organização conforme a tela vai ficando maior. 
+
+Nessa versão, a imagem e o conteúdo ficam lado a lado. Também mudei o tamanho da imagem e do título, e a largura dos botões e da área do texto. Alguns valores precisaram ser ajustados comparando o resultado com a referência. 
+
+A primeira versão ainda não ficou parecida com a referência. As diferenças que notei foram a distribuição dos elementos, o conteúdo e a barra de idiomas que ainda ficam em posições diferentes da página original.
+
+## Comparando com a página original
+
+Como eu estava tendo uma certa dificuldade para acertar os valores dos elementos, pesquisei no ChatGPT se existia alguma forma de descobrir o tamanho dos elementos, cores, fontes e espaçamentos.
+
+Assim, ele recomendou utilizar a ferramenta de inpeção do navegador para tentar achar algumas dessas informações na página original. Já que eu não sabia como usar a ferramenta, pedi para o ChatGPT me explicar passo a passo do que precisava fazer, quais propriedades procurar e como interpretar os valores para que o resultado fosse o mais parecido com a a página de referência.
+
+Uma das partes que investiguei dessa forma foi a barra de idiomas da versão para computador. Consegui encontrar alguns valores relacionados.
+
+Tentei alterar para esses novos valores, mas o resultado ainda não foi tão eficaz, novas mudanças vão precisar ser feitas.
