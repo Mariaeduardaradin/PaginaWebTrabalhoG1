@@ -117,3 +117,35 @@ Organizei essa seção para celular, onde o texto é centralizado e a imagem fic
 Uma das dificuldades dessa parte foi acertar a largura da área de texto porque, dependendo do valor utilizado, as frases quebravam em lugares diferentes da página original. Por isso, fui alterando a largura e comparando as duas páginas até chegar em uma quebra de texto mais parecida com a referência.
 
 Também ajustei o espaço entre o texto e a imagem e o tamanho da ilustração separadamente para cada versão.
+
+## Adicionando a seção "baseado na ciência"
+
+A próxima seção escolhida para reproduzir foi "baseado na ciência", que tem um título, um texto explicativo e uma imagem.
+
+Fiz uma nova section e separei o título e o texto e deixei a imagem abaixo deles. Fui comparando o resultado com a página original e alterando os tamanhos e espaçamentos para deixar a seção mais parecida com a referência.
+
+A imagem estava menor do que a página original e também existiam diferenças no espaço entre o título, o texto e a imagem. Por isso, fui mudando esses valores aos poucos e comparando novamente as duas páginas.
+
+## Adaptando a nova seção para telas maiores
+
+Na versão para computador, a organização muda. A imagem fica do lado esquerdo e o texto do lado direito. Usando o flex-direction com row-reverse consegui fazer a mudança mantendo a mesma estrutura no HTML.
+
+Uma das dificuldades aqui foi a largura da área de texto. Em uma das tentativas, o título "baseado na ciência" estava quebrando em duas linhas, diferente da página original. Fui alterando a largura disponível para o texto até conseguir deixar o ttítulo em uma única linha e aproximar a organização da referência.
+
+Também fiz ajustes no tamanho da imagem, no espaço entre a imagem e o texto e nos espaçamentos da seção. Depois das alterações verifiquei novamente se tinham diferenças.
+
+## Criando o formulário
+
+Depois de finalizar as seções baseadas na página original, comecei a desenvolver o formulário solicitado nos requisitos do trabalho.
+
+A página inicial do Duolingo que utilizei como referência não possui um formulário nessa parte da página. Por isso, criei um formulário próprio para o projeto, tentando manter as cores e o estilo visual do site.
+
+Para essa seção, usei como inspiração uma parte da página original que possui um fundo azul claro e um título em azul escuro. No meu projeto, troquei o conteúdo original dessa seção por um formulário com os campos de nome, e-mail e idioma que a pessoa gostaria de aprender.
+
+Cada campo possui um label associado ao seu input. Também adicionei um botão para enviar o formulário.
+
+No CSS, criei novas variáveis para as cores utilizadas nessa parte e organizei os campos utilizando Flexbox.
+
+Durante o desenvolvimento, fiz alguns testes com os tamanhos, espaçamentos e largura dos campos e do botão. Também tentei utilizar as ilustrações da seção original junto com o formulário, mas o resultado não ficou bom porque a imagem acabou ficando separada do restante do conteúdo. Por causa disso decidi manter apenas o fundo azul e deixar o formulário mais simples.
+
+Para definir a altura da seção utilizei a unidade vh, fazendo com que ela tenha como altura mínima o tamanho da tela. Na versão para computador, diminuí a largura do formulário e aumentei o tamanho do título para aproveitar melhor o espaço.

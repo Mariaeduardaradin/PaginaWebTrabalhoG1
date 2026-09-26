@@ -4,6 +4,8 @@
     --azul: #1cb0f6;
     --cinza: #4b4b4b;
     --cinza-claro: #e5e5e5;
+    --azul-fundo: #d7f3ff;
+    --azul-escuro: #0b3b75;
 }
 
 /*Configurações gerais */
@@ -188,6 +190,70 @@ nav {
     height: auto;
 }
 
+/* Formulário */
+
+.formulario {
+    background-color: var(--azul-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+.formulario h2 {
+    color: var(--azul-escuro);
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario p {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formulario form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 4px;
+    border: 2px solid var(--cinza-claro);
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.formulario button {
+    width: 55%;
+    align-self: center;
+    padding: 14px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-bottom: 4px solid var(--verde-escuro);
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
 /* Versão para telas maiores */
 
 @media (min-width: 768px) {
@@ -324,6 +390,24 @@ nav {
 
     .imagem-ciencia img {
         width: 100%;
+    }
+
+    /* Formulário no desktop */
+
+    .formulario {
+        padding: 130px 20px;
+    }
+
+    .formulario h2 {
+        font-size: 52px;
+    }
+
+    .formulario form {
+        width: 45%;
+    }
+
+    .formulario button {
+        width: 45%;
     }
 
 }
