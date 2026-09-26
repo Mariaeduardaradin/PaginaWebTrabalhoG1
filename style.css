@@ -6,6 +6,7 @@
     --cinza-claro: #e5e5e5;
     --azul-fundo: #d7f3ff;
     --azul-escuro: #0b3b75;
+    --azul-super: #11113f;
 }
 
 /*Configurações gerais */
@@ -254,6 +255,98 @@ nav {
     margin-top: 25px;
 }
 
+/* Seção sobre o projeto */
+
+.sobre-projeto {
+    background-color: var(--azul-super);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.imagem-projeto {
+    width: 100%;
+    text-align: center;
+}
+
+.imagem-projeto img {
+    width: 80%;
+    height: auto;
+}
+
+.texto-projeto {
+    width: 85%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.texto-projeto h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.texto-projeto p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: var(--verde);
+    color: white;
+}
+
+.imagem-footer {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.imagem-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.conteudo-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 18%;
+}
+
+.coluna-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.coluna-footer h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.coluna-footer p {
+    color: #b8ee91;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.coluna-footer a {
+    color: #b8ee91;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 /* Versão para telas maiores */
 
 @media (min-width: 768px) {
@@ -408,6 +501,51 @@ nav {
 
     .formulario button {
         width: 45%;
+    }
+
+    /* Seção sobre o projeto no desktop */
+
+    .sobre-projeto {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 100px 15%;
+    }
+
+    .imagem-projeto {
+        width: 45%;
+    }
+
+    .imagem-projeto img {
+        width: 100%;
+    }
+
+    .texto-projeto {
+        width: 45%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .texto-projeto h2 {
+        font-size: 52px;
+    }
+
+    /*Rodapé no desktop */
+
+    .imagem-footer {
+        padding-top: 100px;
+    }
+
+    .conteudo-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 100px 18% 80px;
+    }
+
+    .coluna-footer {
+        flex-direction: column;
     }
 
 }

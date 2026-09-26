@@ -149,3 +149,27 @@ No CSS, criei novas variáveis para as cores utilizadas nessa parte e organizei 
 Durante o desenvolvimento, fiz alguns testes com os tamanhos, espaçamentos e largura dos campos e do botão. Também tentei utilizar as ilustrações da seção original junto com o formulário, mas o resultado não ficou bom porque a imagem acabou ficando separada do restante do conteúdo. Por causa disso decidi manter apenas o fundo azul e deixar o formulário mais simples.
 
 Para definir a altura da seção utilizei a unidade vh, fazendo com que ela tenha como altura mínima o tamanho da tela. Na versão para computador, diminuí a largura do formulário e aumentei o tamanho do título para aproveitar melhor o espaço.
+
+## Criando uma seção personalizada
+
+Depois de finalizar o formulário, criei uma nova seção para atender ao requisito de personalização do trabalho.
+
+Para essa parte, utilizei como inspiração uma seção da página do Duolingo relacionada ao Super Duolingo. Na página original, essa seção possui um fundo azul escuro, uma ilustração e informações sobre o serviço.
+
+No meu projeto, mantive a ideia visual, mas mudei o conteúdo para criar uma seção "sobre este projeto". Nela coloquei uma pequena explicação sobre o trabalho e também meu nome.
+
+Utilizei uma ilustração do personagem e mantive o fundo azul escuro inspirado na página de referência. Essa seção não possui o mesmo conteúdo da página original, pois foi criada como uma personalização do projeto.
+
+## Criando o rodapé
+
+Para finalizar a página, criei um rodapé inspirado no rodapé da página original do Duolingo.
+
+Na referência, o rodapé possui uma ilustração na parte superior e uma área verde com várias colunas de informação e links. Para o meu projeto, usei a imagem na parte superior e fiz uma versão mais simples das informações.
+
+Dividi o conteúdo em três partes: "Sobre", "Projeto" e "Referência". Na parte "Sobre" coloquei alguns links relacionados ao Duolingo, na parte "Projeto" coloquei informações sobre o trabalho e na parte "Referência" adicionei um link para o site oficial do Duolingo.
+
+Primeiro organizei o rodapé para a versão de celular, deixando as informações uma abaixo da outra. Depois fiz os ajustes para telas maiores dentro da media query, onde as três partes ficam distribuidas lado a lado.
+
+Durante os ajustes, comparei novamente com a página original. Alterei a distribuição das colunas, o tamanho das letras e as cores dos links para aproximar o resultado da referência.
+
+Também precisei trocar a imagem utilizada inicialmente no rodapé, porque ela perdia qualidade quando era aumentada na versão para computador. Depois de trocar consegui manter uma imagem maior e mais próxima da aparência da página original.
