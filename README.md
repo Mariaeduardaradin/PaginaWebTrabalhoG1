@@ -1,6 +1,7 @@
 # Trabalho G1 - Front-End
 
 **Nome:** MARIA EDUARDA RADIN
+
 **RA:** 1139405
 
 ## Sobre o trabalho
@@ -29,7 +30,7 @@ Fiz o primeiro commit para registrar o início do projeto antes de começar a ad
 
 ## Montando a primeira parte da página
 
-Depois da estrutura inicial, escolhi qual parte da página do Duolingo iria reproduzir primeiro. Não tentei fazer ela inteira de uma vez pois ela possui bastante conteúdo.
+Depois da estrutura inicial, escolhi qual parte da página do Duolingo iria reproduzir primeiro. Não tentei fazer ela inteira de uma vez, pois ela possui bastante conteúdo.
 
 Nessa primeira parte coloquei:
 
@@ -71,7 +72,7 @@ Na página original, não são só os elementos que ficam menores quando a tela 
 
 Por isso, fiz pensando primeiro na tela menor e depois fazendo alterações para telas maiores usando uma media query.
 
-Também tive dificuldades em acertar o tamanho dos elementos. A imagem estava ocupando muito espaço e os botões juntamente com o titulo precisaram de alterações pra que ocupassem melhor o espaço.
+Também tive dificuldades em acertar o tamanho dos elementos. A imagem estava ocupando muito espaço e os botões juntamente com o título precisaram de alterações para que ocupassem melhor o espaço.
 
 ## Trabalhando com a versão para telas maiores
 
@@ -87,8 +88,32 @@ A primeira versão ainda não ficou parecida com a referência. As diferenças q
 
 Como eu estava tendo uma certa dificuldade para acertar os valores dos elementos, pesquisei no ChatGPT se existia alguma forma de descobrir o tamanho dos elementos, cores, fontes e espaçamentos.
 
-Assim, ele recomendou utilizar a ferramenta de inpeção do navegador para tentar achar algumas dessas informações na página original. Já que eu não sabia como usar a ferramenta, pedi para o ChatGPT me explicar passo a passo do que precisava fazer, quais propriedades procurar e como interpretar os valores para que o resultado fosse o mais parecido com a a página de referência.
+Assim, ele recomendou utilizar a ferramenta de inspeção do navegador para tentar achar algumas dessas informações na página original. Já que eu não sabia como usar a ferramenta, pedi para o ChatGPT me explicar passo a passo do que precisava fazer, quais propriedades procurar e como interpretar os valores para que o resultado fosse o mais parecido com a página de referência.
 
 Uma das partes que investiguei dessa forma foi a barra de idiomas da versão para computador. Consegui encontrar alguns valores relacionados.
 
 Tentei alterar para esses novos valores, mas o resultado ainda não foi tão eficaz, novas mudanças vão precisar ser feitas.
+
+## Continuando os ajustes
+
+Utilizando a ferramenta de inspeção e comparando as duas páginas, fui fazendo novos ajustes no CSS.
+
+Alguns elementos precisaram ser alterados várias vezes para ficarem o mais próximos da referência possível. O tamanho das imagens, a largura das áreas de conteúdo, os espaçamentos e o jeito como os textos quebravam de uma linha para outra eram o foco das mudanças que precisavam ser feitas.
+
+Ao longo dos testes com os valores encontrados na inspeção da página original, percebi que não poderia usar e os mesmos valores, pois a estrutura do meu projeto é diferente da estrutura do Duolingo. Então usei as informações como uma referência e fui adaptando para o meu CSS.
+
+Durante esse processo fui testando as alterações tanto na versão de telas menores quanto na de telas maiores, pois algumas mudanças que funcionavam em uma não ficavam boas na outra.
+
+## Adicionando outra parte da página
+
+Depois de terminar os principais ajustes da primeira parte, comecei a reproduzir mais uma seção da página original.
+
+Escolhi a seção "grátis. divertido. eficaz." que possui um título, um pequeno texto explicativo, um link e uma imagem.
+
+Criei uma nova section no HTML e separei o texto e a imagem em divs. A imagem também recebeu um texto alternativo através do atributo alt.
+
+Organizei essa seção para celular, onde o texto é centralizado e a imagem fica abaixo do conteúdo. Logo após, fiz os ajustes para a versão de computador dentro da media query, onde o texto e a imagem ficam lado a lado.
+
+Uma das dificuldades dessa parte foi acertar a largura da área de texto porque, dependendo do valor utilizado, as frases quebravam em lugares diferentes da página original. Por isso, fui alterando a largura e comparando as duas páginas até chegar em uma quebra de texto mais parecida com a referência.
+
+Também ajustei o espaço entre o texto e a imagem e o tamanho da ilustração separadamente para cada versão.
