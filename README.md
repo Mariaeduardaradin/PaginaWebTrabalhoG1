@@ -173,3 +173,11 @@ Primeiro organizei o rodapé para a versão de celular, deixando as informaçõe
 Durante os ajustes, comparei novamente com a página original. Alterei a distribuição das colunas, o tamanho das letras e as cores dos links para aproximar o resultado da referência.
 
 Também precisei trocar a imagem utilizada inicialmente no rodapé, porque ela perdia qualidade quando era aumentada na versão para computador. Depois de trocar consegui manter uma imagem maior e mais próxima da aparência da página original.
+
+## Ajustando a barra de idiomas
+
+Como ajustes visuais finais adicionei as imagens na barra de idiomas. No Duolingo, cada idioma possui uma pequena imagem ao lado do nome, como a bandeira do país ou um ícone no caso do xadrez.
+
+Para aproximar mais o resultado da referência, fiz essa mudança e ajustei o tamanho e o alinhamento das imagens com os textos.
+
+Também alterei o espaçamento da barra para deixar as linhas superior e inferior mais próximas dos elementos, tentando deixar a proporção parecida com a da página original.
