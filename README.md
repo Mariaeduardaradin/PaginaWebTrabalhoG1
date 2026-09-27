@@ -100,7 +100,7 @@ Utilizando a ferramenta de inspeção e comparando as duas páginas, fui fazendo
 
 Alguns elementos precisaram ser alterados várias vezes para ficarem o mais próximos da referência possível. O tamanho das imagens, a largura das áreas de conteúdo, os espaçamentos e o jeito como os textos quebravam de uma linha para outra eram o foco das mudanças que precisavam ser feitas.
 
-Ao longo dos testes com os valores encontrados na inspeção da página original, percebi que não poderia usar e os mesmos valores, pois a estrutura do meu projeto é diferente da estrutura do Duolingo. Então usei as informações como uma referência e fui adaptando para o meu CSS.
+Ao longo dos testes com os valores encontrados na inspeção da página original, percebi que não poderia usar os mesmos valores, pois a estrutura do meu projeto é diferente da estrutura do Duolingo. Então usei as informações como uma referência e fui adaptando para o meu CSS.
 
 Durante esse processo fui testando as alterações tanto na versão de telas menores quanto na de telas maiores, pois algumas mudanças que funcionavam em uma não ficavam boas na outra.
 
@@ -130,7 +130,7 @@ A imagem estava menor do que a página original e também existiam diferenças n
 
 Na versão para computador, a organização muda. A imagem fica do lado esquerdo e o texto do lado direito. Usando o flex-direction com row-reverse consegui fazer a mudança mantendo a mesma estrutura no HTML.
 
-Uma das dificuldades aqui foi a largura da área de texto. Em uma das tentativas, o título "baseado na ciência" estava quebrando em duas linhas, diferente da página original. Fui alterando a largura disponível para o texto até conseguir deixar o ttítulo em uma única linha e aproximar a organização da referência.
+Uma das dificuldades aqui foi a largura da área de texto. Em uma das tentativas, o título "baseado na ciência" estava quebrando em duas linhas, diferente da página original. Fui alterando a largura disponível para o texto até conseguir deixar o título em uma única linha e aproximar a organização da referência.
 
 Também fiz ajustes no tamanho da imagem, no espaço entre a imagem e o texto e nos espaçamentos da seção. Depois das alterações verifiquei novamente se tinham diferenças.
 
@@ -181,3 +181,109 @@ Como ajustes visuais finais adicionei as imagens na barra de idiomas. No Duoling
 Para aproximar mais o resultado da referência, fiz essa mudança e ajustei o tamanho e o alinhamento das imagens com os textos.
 
 Também alterei o espaçamento da barra para deixar as linhas superior e inferior mais próximas dos elementos, tentando deixar a proporção parecida com a da página original.
+
+## Diferenças em relação à página original
+
+Durante o desenvolvimento tentei aproximar a página do projeto da página original do Duolingo, mas algumas diferenças foram mantidas.
+
+Uma delas é a fonte utilizada. Ao inspecionar a página original, vi que o Duolingo usa uma fonte própria. No projeto mantive a fonte Arial, que já estava usando antes no CSS, por isso existem pequenas diferenças no formato.
+
+Também reproduzi apenas algumas partes da página inicial usada como referência. O formulário e a seção "sobre este projeto" foram adicionados ao projeto para atender aos requisitos do trabalho e não fazem parte dessa forma na páginsa original.
+
+O rodapé também foi simplificado, mantendo a ideia visual da referência, mas usando menos informações e colunas.
+
+## Checklist dos requisitos
+
+### 1.1 HTML semântico e acessibilidade
+
+Utilizei elementos semânticos como `header`, `nav`, `main`, `section` e `footer` para organizar a estrutura da página.
+
+As imagens possuem o atributo `alt` com uma descrição do conteúdo apresentado.
+
+O projeto também possui um formulário com campos de nome, e-mail e idioma. Cada campo possui um `label` associado ao respectivo `input` através dos atributos `for` e `id`.
+
+### 1.2 Fidelidade visual
+
+A página inicial do Duolingo foi usada como referência durante todo o desenvolvimento. Comparei as duas páginas e fiz ajustes nos tamanhos das imagens, espaçamentos, cores, textos, botões e distribuição dos elementos.
+
+Também utilizei a ferramenta de inspeção do navegador para consultar algumas características visuais da página original e usar essas informações como referência para os ajustes.
+
+Algumas diferenças foram mantidas e estão explicadas na seção anterior.
+
+### 1.3 CSS
+
+O CSS foi desenvolvido em um arquivo chamado `style.css`.
+
+Foram usados diferentes tipos de seletores, além de propriedades relacionadas ao box model, como `margin`, `padding`, `border` e `width`.
+
+Também criei variáveis CSS em `:root` para armazenar algumas das principais cores utilizadas na página e reutilizá-las em diferentes elementos.
+
+### 1.4 Responsividade
+
+O projeto foi desenvolvido usando a ideia mobile first. O CSS base organiza a página pensando primeiro nas telas menores
+
+Para telas maiores usei uma media query com `min-width: 768px`, alterando a organização e o tamanho de alguns elementos.
+
+Também utilizei Flexbox para organizar os elementos das seções. A página foi testada em tamanhos de tela menores e maiores durante o desenvolvimento.
+
+### 1.5 Personalização
+
+Para personalizar o projeto, criei a seção "sobre este projeto".
+
+Ela foi inspirada visualmente em uma seção do Duolingo, mas possui um conteúdo próprio explicando que a página foi desenvolvida para o trabalho G1 da disciplina de Front-End e apresenta também meu nome.
+
+## Comparação com a página original
+
+### Página inicial
+
+**Projeto:**
+
+![Página inicial do projeto](imagens/prints/desktop-projeto-inicio.png)
+
+**Referência:**
+
+![Página inicial original do Duolingo](imagens/prints/desktop-original-inicio.png)
+
+### Seção "grátis. divertido. eficaz."
+
+**Projeto:**
+
+![Seção grátis divertido eficaz do projeto](imagens/prints/desktop-projeto-divertido.png)
+
+**Referência:**
+
+![Seção grátis divertido eficaz original](imagens/prints/desktop-original-divertido.png)
+
+### Seção "baseado na ciência"
+
+**Projeto:**
+
+![Seção baseado na ciência do projeto](imagens/prints/desktop-projeto-ciencia.png)
+
+**Referência:**
+
+![Seção baseado na ciência original](imagens/prints/desktop-original-ciencia.png)
+
+### Seção personalizada
+
+A seção "sobre este projeto" foi criada utilizando como inspiração visual a seção do Super Duolingo.
+
+**Projeto:**
+
+![Seção sobre este projeto](imagens/prints/desktop-projeto-personalizacao.png)
+
+**Referência:**
+
+![Seção Super Duolingo original](imagens/prints/desktop-original-super.png)
+
+### Versão para celular
+
+Também comparei o resultado em uma tela menor para verificar a responsividade da página.
+
+**Projeto:**
+
+![Página inicial do projeto na versão para celular](imagens/prints/mobile-projeto-inicio.png)
+
+**Referência:**
+
+![Página original do Duolingo na versão para celular](imagens/prints/mobile-original-inicio.png)

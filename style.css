@@ -2,7 +2,7 @@
     --verde: #58cc02;
     --verde-escuro: #46a302;
     --azul: #1cb0f6;
-    --cinza: #4b4b4b;
+    --cinza: #777777;
     --cinza-claro: #e5e5e5;
     --azul-fundo: #d7f3ff;
     --azul-escuro: #0b3b75;
@@ -69,6 +69,7 @@ nav {
 }
 
 .conteudo-principal h1 {
+    color: #4b4b4b;
     font-size: 28px;
     line-height: 1.2;
     margin: 20px 0;
@@ -408,7 +409,7 @@ footer {
         gap: 35px;
         padding: 18px 40px;
         border-top: 1.6px solid var(--cinza-claro); 
-        border-bottom: 1.6px solid var(--cinza-claro)
+        border-bottom: 1.6px solid var(--cinza-claro);
     }
 
     .idiomas a {
